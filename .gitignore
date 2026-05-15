@@ -1,0 +1,18 @@
+# Terraform working directory (provider binaries, module cache)
+.terraform/
+.terraform.tfstate.lock.info
+
+# State files (may contain sensitive data; managed remotely or locally)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Plan output
+*.tfplan
+
+# CLI configuration files
+.terraformrc
+terraform.rc
