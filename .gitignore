@@ -6,6 +6,10 @@
 *.tfstate
 *.tfstate.*
 
+# Bootstrap workspace is the one exception: it provisions the remote-state
+# backend itself, so its state has to live in version control.
+!bootstrap/terraform.tfstate
+
 # Crash log files
 crash.log
 crash.*.log
@@ -16,3 +20,4 @@ crash.*.log
 # CLI configuration files
 .terraformrc
 terraform.rc
+
